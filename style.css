@@ -49,6 +49,25 @@ body{
     padding-top: 1vw;
 }
 
+details>summary{
+    list-style-type: none;
+    cursor: pointer;
+}
+
+details>ul{
+    list-style-type:none;
+    font-family: serif;
+    font-size: 1vw;
+    font-weight: 700;
+}
+details>ul>li{
+    cursor: pointer;
+}
+
+details>ul>li:nth-child(1){
+    padding-top: 0.5vw;
+}
+
 #main{
     height: 15.5vw;
     width: 100%;
@@ -139,15 +158,16 @@ body{
 
 .elements{
     height: 100%;
-    width: 22%;
+    width: 30vw;
     font-size: 0.74vw;
     font-family: sans-serif;
-    align-content: center;
-    
+    align-content: center;    
 }
+
 .elements>p{
     width: fit-content;
 }
+
 .elements>p:hover{
     color: #eaeaeb;
     font-size: 1.5vw;
@@ -183,8 +203,12 @@ body{
 }
 
 .elements>p:nth-last-child(1){
-    padding-left: 6.8vw;
+    padding-left: 1vw;
     width: 12%;
+}
+
+.elements>p:nth-child(5){
+    padding-left: 2vw;
 }
 
 #main3{
