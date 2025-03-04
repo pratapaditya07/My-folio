@@ -1,16 +1,18 @@
-let buttons = document.querySelectorAll(".btn");
-        let box = document.querySelector(".box");
+// Get all H1 elements inside the div
+const h1Elements = document.querySelectorAll('.main2 h1');
 
-        buttons.forEach(button => {
-            button.addEventListener("mouseenter", () => {
-                gsap.to(box, { height:"100px", backgroundColor: "#272527", duration: 0.9, scrub: 2, ease: "power2.out" });
-            });
+// Add event listeners for hover effect
+h1Elements.forEach(h1 => {
+    h1.addEventListener('mouseenter', () => {
+        // Add class to trigger animation on the parent div
+        document.querySelector('.main2').classList.add('animate');
+    });
 
-            button.addEventListener("mouseleave", () => {
-                gsap.to(box, { height: "0px", backgroundColor: "#272527", duration: 0.9 ,scrub : 2 , ease: "power2.inOut" });
-            });
-        });
-
+    h1.addEventListener('mouseleave', () => {
+        // Remove the class to stop the animation
+        document.querySelector('.main2').classList.remove('animate');
+    });
+});
 
 
 
